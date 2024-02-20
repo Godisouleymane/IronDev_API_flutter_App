@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:irondev_api/widgets/vimeo_widget.dart';
 
+Map<String, dynamic> lesson = {
+  'title': 'Suprimer les UID inactifs',
+  "videoLocation": '707039256'
+};
+
 class LessonScreen extends StatelessWidget {
   const LessonScreen({super.key});
 
@@ -23,6 +28,7 @@ class LessonScreen extends StatelessWidget {
               videoId: '707039256',
             ),
           ),
+          Text(lesson['title'])
         ],
       ),
     );

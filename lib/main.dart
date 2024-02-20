@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:irondev_api/screens/home_screen.dart';
+import 'package:irondev_api/screens/lesson_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: HomeScrenn(),
+      home: LessonScreen(),
     );
   }
 }
