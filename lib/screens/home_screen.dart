@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:vimeo_player_flutter/vimeo_player_flutter.dart';
+import 'package:irondev_api/widgets/vimeo_widget.dart';
+
 
 class HomeScrenn extends StatelessWidget {
   const HomeScrenn({super.key});
@@ -7,13 +8,20 @@ class HomeScrenn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Container(
-          height: 250,
-          child: VimeoPlayer(
-            videoId: '707039256',
-          ),
-        ),
+      appBar: AppBar(
+        title:Text('Iron Dev Academy'),
+        centerTitle: true,
+        backgroundColor: Colors.blue,
+      ),
+      body: Column(
+        children: [
+           Container(
+              height: 250,
+              child: VimeoPlayer(
+                videoId: '707039256',
+              ),
+            ),
+        ],
       ),
     );
   }
