@@ -13,14 +13,13 @@ class LessonScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          'Iron Dev Academy',
-          style: TextStyle(color: Colors.white),
-        ),
+       
         centerTitle: true,
         backgroundColor: Colors.blueAccent,
       ),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Container(
             height: 250,
@@ -28,7 +27,10 @@ class LessonScreen extends StatelessWidget {
               videoId: '707039256',
             ),
           ),
-          Text(lesson['title'])
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text(lesson['title'], style: Theme.of(context).textTheme.headline5,),
+          )
         ],
       ),
     );
