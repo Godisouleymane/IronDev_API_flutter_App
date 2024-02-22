@@ -16,15 +16,17 @@ class HomeScrenn extends StatelessWidget {
           backgroundColor: Colors.blueAccent,
         ),
         body: ListView(
-          children: const [
+          children: [
             Card(
               child: ListTile(
-                leading: Icon(Icons.videocam),
-              title: Text('Leeson 1'),
-              subtitle: Text('Lesson 1'),
-              trailing: Icon(Icons.play_arrow),
+                leading: const Icon(Icons.videocam),
+                title: const Text('Leeson 1'),
+                subtitle: Text('Lesson 1'),
+                trailing: Icon(Icons.play_arrow),
+                onTap: () {
+                  Navigator.pushNamed(context, 'roueName');
+                },
               ),
-              
             )
           ],
         ));
